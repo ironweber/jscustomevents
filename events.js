@@ -15,7 +15,7 @@ var events = {
         if(document.createEvent) { // IE9
             evt = document.createEvent("CustomEvent");
             evt.initCustomEvent(type,true,true,detail);
-        } else if(document.createEventObject) { // IE8/7 cannot create custom events so ignore. Everything is handle on through the add method
+        } else if(document.createEventObject) { // IE8/7 
             evt = {
                 "type" : type,
                 "detail" : detail
